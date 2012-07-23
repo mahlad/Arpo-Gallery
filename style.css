@@ -13,7 +13,80 @@
  *{
 	 margin:0;
 	 padding:0;
- }	
+ }
+ body{
+ }
+ h2{
+	font-size:22px;	 
+ }
+ /*---------------Index page---------------*/
+ div.bg-slide{
+	background:url(images/img3.jpg) no-repeat fixed 0 0;
+	width:100%;
+	height:100%;	 
+ }
  /*---------------Header(General Right Nav)---------------*/
- 
- 
+
+body > header{
+	width:230px;
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	height:100%;
+	left:20px;
+		
+}
+body > header > article{
+	position:relative;
+	margin-top:20px;
+	
+}
+body > header > article img{
+	margin:0 auto;
+}
+nav.headernav{
+	margin-top:50px;
+}
+nav.headernav ul li{
+	margin:30px 0;
+	text-align:center;	
+}
+nav.headernav ul li a{
+	color:#b3b3b3;
+	text-decoration:none;
+	font-weight:bolder;
+ }
+ nav.headernav ul li:hover a,nav.headernav ul li:hover a span{
+	color:#fff;	 
+ }
+ nav.headernav ul li a span{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;	 
+ }
+ nav.headernav ul li ul{
+	display:none;
+	position:absolute;
+	left:210px;
+	top:73%;
+	width:200px;	 
+ }
+ nav.headernav ul li li{
+	float:none;
+	padding:0;
+	margin:0;
+	background-color:#f2f2f2;
+	height:40px;
+ }
+ nav.headernav ul li:hover ul{
+	display:block;
+	background:url(images/navigation_ul_bg.png) no-repeat 0px 14px ;
+	position:absolute;
+	padding:0 0 0 7px;	 
+ }
+nav.headernav ul li:hover ul li a{
+	color:#666; 
+	line-height:40px; 
+}
+nav.headernav ul li:hover ul li:hover a{
+	color:#000;  
+}
