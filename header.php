@@ -2,13 +2,13 @@
 	include'head.php';
 ?>
 <body>
-	<header>
+	<header class="general">
     	<article>
         	<img class="ml2" src="images/logo.png">
             <img class="ml1" src="images/logo-text.png">
             <nav class="headernav">
             	<ul>
-                	<li><a href="">
+                	<li><a href="about.php">
                     	<h2>بیوگرافی من</h3>
                     	<span>آشنایی با طراح</span>
                     </a>
