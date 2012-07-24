@@ -17,53 +17,18 @@
  body{
  }
 h1{
-	font-size:24px;	
+	font-size:27px;	
 }
  h2{
-	font-size:22px;	 
+	font-size:24px;	 
  }
-
-/*-----background for all pages-----*/
-div.container:first-child header,div.container #main,div.container footer, div.container header.pages h1{
-	width:100%;
-	
-	
+h3{
+	font-size:22px;	
 }
-div.bg-fixed{
-	position:fixed;
-	width:100%;
-	height:100%;
-	top:0;
+div.out{
+	position:absolute;
 	left:0;
-	overflow:hidden;	
-}
- div.bg-fixed:first-child img{
-	top:34px;
-	left:0;
-	width:1280px;
-	height:720px;	
-}
-/*-----Header For all pages-----*/
-div.container header.pages, div.container #main{
-	margin:0 40px ;
-}
-div.container header.pages{
-	height:87px;
-	top:5px;
-	font-weight:bolder;
-		
-}
-div.container header.pages h1{
-	line-height:87px;
-	color:#fff;
-	border-bottom:3px solid #fff;
-	text-align:right;
-}
-div.container #main,div.container footer, div.container header																																																									
-{
-	min-height:400px;
-	outline:1px solid #fff;
-	
+	top:0;	
 }
  /*---------------Header(General Right Nav)---------------*/
 
@@ -81,19 +46,22 @@ header.general article{
 	
 }
 header.general article > img{
-	left:40px;
+	position:relative;
 }
 nav.headernav{
 	margin-top:50px;
 }
 nav.headernav ul li{
-	margin:30px 0;
-	text-align:center;	
+	margin:5px 15px;
+	padding:15px 0;
+	text-align:center;
+	min-height:20px;	
 }
 nav.headernav ul li a{
 	color:#b3b3b3;
 	text-decoration:none;
 	font-weight:bolder;
+	line-height:20px;
  }
  nav.headernav ul li:hover a,nav.headernav ul li:hover a span{
 	color:#fff;	 
@@ -101,7 +69,7 @@ nav.headernav ul li a{
  nav.headernav ul li a span{
 	font-size:14px;
 	font-weight:normal;
-	text-align:center;	 
+	text-align:center;
  }
  nav.headernav ul li ul{
 	display:none;
@@ -116,6 +84,9 @@ nav.headernav ul li a{
 	margin:0;
 	background-color:#f2f2f2;
 	height:40px;
+ }
+ nav.headernav ul li:hover{
+	background-color:#000;	 
  }
  nav.headernav ul li:hover ul{
 	display:block;
@@ -136,13 +107,90 @@ nav.headernav ul li:hover ul li:hover a{
 	width:100%;
 	height:100%;	 
  }
-/*---------------About page---------------*/
+/*---------------background for all pages----------------*/
 
+div.bg-fixed{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;	
+}
+ div.bg-fixed:first-child img{
+	top:34px;
+	left:0;
+	width:1280px;
+	height:720px;	
+}
+/*---------------Header For all pages---------------*/
+
+div.container header.pages{
+	height:87px;
+	font-weight:bolder;
+	padding:0 40px;
+	position:relative;	
+}
+div.container header.pages h1{
+	line-height:87px;
+	color:#fff;
+	border-bottom:3px solid #fff;
+	text-align:right;
+}
+div.container #main{
+	padding:5px 40px 0;
+}
+div.container #main p{
+	padding-bottom:20px;		
+
+}
+div.container #main img,div.container #main h2, div.container #main p{
+	float:right;
+	color:#fff;
+	text-align:right;
+	padding-top:40px;
+		
+}
+div.container #main{																																										
+	min-height:400px;
+	
+}
 /*---------------footer page---------------*/
 div.container footer{
-	background-color:#000;	
-	outline:1px solid #fff;
-	left:0;
-	right:0;
-	margin:0;
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	text-align:right;
+	padding:2px 40px;
 }
+div.container footer div.bottom{
+	margin-top:50px;
+		
+}
+div.container footer div.bottom section {
+	padding-left:0;
+	min-height:150px;
+}
+div.container footer div.bottom section.padleft{
+	padding-left:30px !important;		
+}
+div.bottom section h3{
+	border-bottom:3px solid rgba(255,255,255,0.5);
+	padding:20px 0;	
+}
+div.bottom section p{
+	color:#666;
+	padding:20px 0;
+}
+div.container footer div.copyright{
+	height:40px;
+}
+div.container footer div.copyright p{
+	color:#fff;
+	text-align:right;
+	line-height:40px;
+	float:right;
+	font-size:12px;
+}
+/*---------------About page---------------*/
+
+
