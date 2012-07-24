@@ -5,7 +5,9 @@
 	include'header.php';
 ?>
 <div class="container">
-	<header></header>
+	<header class="pages">
+    	<h1>درباره من</h1>
+    </header>
 	<div id="main"></div>
 
 <?php

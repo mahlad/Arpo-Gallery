@@ -16,15 +16,54 @@
  }
  body{
  }
+h1{
+	font-size:24px;	
+}
  h2{
 	font-size:22px;	 
  }
- /*--background for all pages--*/
+
+/*-----background for all pages-----*/
+div.container:first-child header,div.container #main,div.container footer, div.container header.pages h1{
+	width:100%;
+	
+	
+}
+div.bg-fixed{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;	
+}
  div.bg-fixed:first-child img{
 	top:34px;
 	left:0;
 	width:1280px;
 	height:720px;	
+}
+/*-----Header For all pages-----*/
+div.container header.pages, div.container #main{
+	margin:0 40px ;
+}
+div.container header.pages{
+	height:87px;
+	top:5px;
+	font-weight:bolder;
+		
+}
+div.container header.pages h1{
+	line-height:87px;
+	color:#fff;
+	border-bottom:3px solid #fff;
+	text-align:right;
+}
+div.container #main,div.container footer, div.container header																																																									
+{
+	min-height:400px;
+	outline:1px solid #fff;
+	
 }
  /*---------------Header(General Right Nav)---------------*/
 
@@ -36,13 +75,13 @@ header.general{
 	left:20px;
 		
 }
-header.general > article{
+header.general article{
 	position:relative;
-	margin-top:20px;
+	top:50px;
 	
 }
-header.general > article img{
-	margin:0 auto;
+header.general article > img{
+	left:40px;
 }
 nav.headernav{
 	margin-top:50px;
@@ -98,11 +137,12 @@ nav.headernav ul li:hover ul li:hover a{
 	height:100%;	 
  }
 /*---------------About page---------------*/
-div.bg-fixed{
-	position:fixed;
-	width:100%;
-	height:100%;
-	top:0;
+
+/*---------------footer page---------------*/
+div.container footer{
+	background-color:#000;	
+	outline:1px solid #fff;
 	left:0;
-	overflow:hidden;	
+	right:0;
+	margin:0;
 }
