@@ -4,8 +4,12 @@
 
 /* A container should group all your columns. */
 .container {
-  width: 980px;
-  margin: 0 auto;
+  width: 740px;
+  position:relative;
+  top:0;
+  left:262px;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
 }
 
 
