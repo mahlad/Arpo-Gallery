@@ -17,7 +17,7 @@
  body{
  }
 h1{
-	font-size:27px;	
+	font-size:26px;	
 }
  h2{
 	font-size:24px;	 
@@ -75,7 +75,7 @@ nav.headernav ul li a{
 	display:none;
 	position:absolute;
 	left:210px;
-	top:73%;
+	top:64%;
 	width:200px;	 
  }
  nav.headernav ul li li{
@@ -93,6 +93,10 @@ nav.headernav ul li a{
 	background:url(images/navigation_ul_bg.png) no-repeat 0px 14px ;
 	position:absolute;
 	padding:0 0 0 7px;	 
+ }
+ nav.headernav ul li:hover ul li:hover{
+	 background:#f2f2f2;
+	 color:#000;
  }
 nav.headernav ul li:hover ul li a{
 	color:#666; 
@@ -140,21 +144,8 @@ div.container header.pages h1{
 div.container #main{
 	padding:5px 40px 0;
 }
-div.container #main p{
-	padding-bottom:20px;		
 
-}
-div.container #main img,div.container #main h2, div.container #main p{
-	float:right;
-	color:#fff;
-	text-align:right;
-	padding-top:40px;
-		
-}
-div.container #main{																																										
-	min-height:400px;
-	
-}
+
 /*---------------footer page---------------*/
 div.container footer{
 	background-color:rgba(0,0,0,0.5);
@@ -170,7 +161,7 @@ div.container footer div.bottom section {
 	padding-left:0;
 	min-height:150px;
 }
-div.container footer div.bottom section.padleft{
+div.container section.padleft{
 	padding-left:30px !important;		
 }
 div.bottom section h3{
@@ -192,5 +183,23 @@ div.container footer div.copyright p{
 	font-size:12px;
 }
 /*---------------About page---------------*/
+div.container #main p{
+	padding-bottom:20px;		
 
-
+}
+div.container #main img,div.container #main h2, div.container #main p{
+	float:right;
+	color:#fff;
+	text-align:right;
+	padding-top:40px;
+		
+}
+/*---------------Album page---------------*/
+#main section.album{
+	margin:0;
+}
+#main section.album h3{
+	color:#fff;
+	text-align:right;
+	padding-top:40px;	
+}
